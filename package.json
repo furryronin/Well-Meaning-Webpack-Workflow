@@ -1,0 +1,54 @@
+{
+  "name": "webpack-workflow",
+  "version": "2.0.1",
+  "description": "Well meaning Webpack workflow with handlebar support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && webpack --config ./webpack.prod.js",
+    "lint:js": "./node_modules/.bin/eslint src/js/*.js",
+    "lint:styles": "stylelint \"src/**/*.scss\"",
+    "lint:html": "rimraf dist && webpack --config ./webpack.prod.js && pa11y-ci ./dist/**/*.html",
+    "start": "rimraf dist && webpack --config ./webpack.prod.js && http-server ./dist -o",
+    "start:dev": "webpack serve --config ./webpack.dev.js"
+  },
+  "keywords": [],
+  "author": "Gareth Hogan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "autoprefixer": "^10.3.1",
+    "babel-loader": "^9.1.2",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^6.2.0",
+    "eslint": "^8.41.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "file-loader": "^6.2.0",
+    "handlebars": "^4.7.7",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^5.3.2",
+    "image-webpack-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^2.2.0",
+    "pa11y-ci": "^3.0.1",
+    "postcss-loader": "^6.1.1",
+    "sass-loader": "^12.1.0",
+    "stylelint": "^15.6.2",
+    "stylelint-config-standard": "^33.0.0",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "raw-loader": "^4.0.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.37.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
