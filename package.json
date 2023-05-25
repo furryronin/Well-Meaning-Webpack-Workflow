@@ -14,7 +14,7 @@
   },
   "keywords": ["Webpack, Handlebars, HTML, SCSS"],
   "author": "Gareth Hogan",
-  "license": "Unlicence",
+  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",

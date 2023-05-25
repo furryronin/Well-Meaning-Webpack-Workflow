@@ -9,14 +9,11 @@
     <title>{{htmlWebpackPlugin.options.title}}</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="page-top" class="home" >
 
-    <h1>Webpack, Sass & A Template Engine</h1>
-    <img src="./static/logo.png" alt="">
-    <img src="./static/logo-Copy.png" alt="">
-
-   {{> partials/header title=htmlWebpackPlugin.options.title}} 
-   {{> partials/newsletter}}
-    
+    {{> partials/header title=htmlWebpackPlugin.options.title}}
+    <h3>Title is set from the webpack.common.js 'HtmlWebpackPlugin', the whole header above is in 'src/patrials/header.handlebars'</h3>
+    <img src="./static/coffee-cup-on-table.jpg" alt="looking directly down on a cup of Coffee on a table">
+   
 </body>
 </html>

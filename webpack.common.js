@@ -102,7 +102,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "My Cool Website",
+      title: "Well Meaning Webpack Workflow",
       template: "./src/index.handlebars",
       minify: {
         html5: true,
