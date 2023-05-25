@@ -1,6 +1,6 @@
 {
-  "name": "webpack-workflow",
-  "version": "2.0.1",
+  "name": "Well-Meaning-Webpack-Workflow",
+  "version": "2.0.3",
   "description": "Well meaning Webpack workflow with handlebar support",
   "main": "index.js",
   "scripts": {
@@ -12,9 +12,9 @@
     "start": "rimraf dist && webpack --config ./webpack.prod.js && http-server ./dist -o",
     "start:dev": "webpack serve --config ./webpack.dev.js"
   },
-  "keywords": [],
+  "keywords": ["Webpack, Handlebars, HTML, SCSS"],
   "author": "Gareth Hogan",
-  "license": "ISC",
+  "license": "Unlicence",
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
