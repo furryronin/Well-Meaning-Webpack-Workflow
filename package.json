@@ -10,7 +10,7 @@
     "lint:styles": "stylelint \"src/**/*.scss\"",
     "lint:html": "rimraf dist && webpack --config ./webpack.prod.js && pa11y-ci ./dist/**/*.html",
     "start": "rimraf dist && webpack --config ./webpack.prod.js && http-server ./dist -o",
-    "start:dev": "webpack serve --config ./webpack.dev.js"
+    "start:dev": "webpack serve --env development --config ./webpack.dev.js"
   },
   "keywords": ["Webpack, Handlebars, HTML, SCSS"],
   "author": "Gareth Hogan",
